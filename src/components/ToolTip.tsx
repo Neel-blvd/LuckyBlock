@@ -16,9 +16,9 @@ function ToolTip({ content, children }: ToolTipPropType) {
     <TooltipProvider>
         <Tooltip>
             <TooltipTrigger>{children}</TooltipTrigger>
-                <TooltipContent>
+                <TooltipContent className='rounded-full'>
                     <p>{content}</p>
-            </TooltipContent>
+                </TooltipContent>
         </Tooltip>
     </TooltipProvider>
   );
